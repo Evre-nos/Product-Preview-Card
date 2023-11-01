@@ -1,0 +1,146 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.main {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sub-main container */
+.sub-main {
+  height: 500px;
+  width: 650px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+}
+
+/* Product image */
+.product-img {
+  height: 100%;
+  width: 50%;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* Product info */
+.product-info {
+  height: 100%;
+  width: 50%;
+}
+
+/* Product info text */
+.p1 p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+
+/* Product heading */
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+}
+
+/* Product info paragraph */
+.p3 p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+/* Price */
+.price {
+  display: flex;
+  align-items: center;
+}
+
+/* Current price */
+.curr-price {
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 13px;
+}
+
+/* Old price */
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+}
+
+/* Button */
+button {
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  height: 50px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  transition: background-color 0.3s linear;
+}
+
+button:hover {
+  background-color: rgb(26, 64, 49);
+  cursor: pointer;
+}
+
+button p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Info container */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 95%;
+  margin: 3% 10% 3% 10%;
+}
+
+/* Button icon */
+button i {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .sub-main {
+    height: 744px;
+    width: 418px;
+    flex-direction: column;
+  }
+
+  .product-img {
+    width: 418px;
+    height: 297px;
+  }
+
+  .product-img img {
+    srcset: url("./images/image-product-desktop.jpg") 1x,
+      url("./images/image-product-mobile.jpg") 2x;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .product-info {
+    width: 418px;
+  }
+}
