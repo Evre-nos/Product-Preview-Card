@@ -5,7 +5,7 @@
 }
 
 /* Main container */
-.main {
+main {
   background-color: hsl(30, 38%, 92%);
   height: 100vh;
   width: 100vw;
